@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a35">
+  <meta name="description" content="From Zero to Wholesale Hero by Vergino S. Jules — a step-by-step guide to selling brand-name products with Amazon FBA and Walmart WFS.">
+  <title>From Zero to Wholesale Hero | VJ GLOBAL</title>
+  <style>
+    :root{--navy:#071a35;--navy2:#0b2b55;--gold:#e8bd65;--gold2:#f4d994;--ink:#f7f8fc;--muted:#bdc9d9;--line:rgba(255,255,255,.15)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--navy);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit}
+    .site-header{position:sticky;top:0;z-index:5;background:rgba(5,19,39,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav{max-width:1160px;margin:auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800;letter-spacing:.09em}
+    .brand-mark{width:37px;height:37px;border:1.5px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-weight:800}
+    .nav-links{display:flex;align-items:center;gap:25px}
+    .nav-links a{text-decoration:none;color:#e5ebf4;font-size:14px}
+    .nav-links a:hover{color:var(--gold2)}
+    .nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;border-radius:9px;padding:13px 19px;text-decoration:none;font-weight:800;transition:.2s}
+    .nav-cta,.button.primary{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#17243a}
+    .button.secondary{border:1px solid rgba(255,255,255,.42);color:white;background:rgba(255,255,255,.04)}
+    .button:hover,.nav-cta:hover{transform:translateY(-2px);filter:brightness(1.06)}
+    .hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 20%,rgba(30,95,160,.45),transparent 42%),linear-gradient(120deg,#071a35 0%,#0a2d59 62%,#0b3970 100%)}
+    .hero:after{content:"";position:absolute;width:580px;height:580px;border:1px solid rgba(232,189,101,.14);border-radius:50%;right:-220px;top:-220px;box-shadow:0 0 0 65px rgba(232,189,101,.035),0 0 0 130px rgba(232,189,101,.025);pointer-events:none}
+    .hero-inner{position:relative;z-index:1;max-width:1160px;margin:auto;padding:74px 24px 82px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.8fr);gap:70px;align-items:center}
+    .eyebrow{color:var(--gold2);font-size:11px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+    .eyebrow:before{content:"";width:28px;height:2px;background:var(--gold)}
+    h1{font-size:clamp(38px,5.4vw,66px);line-height:1.04;letter-spacing:-.045em;margin:20px 0 20px;max-width:680px}
+    h1 span{color:var(--gold2)}
+    .hero-copy{font-size:18px;color:#d1dbea;max-width:650px;margin:0 0 24px}
+    .author-line{color:var(--gold2);font-weight:800;margin:0 0 26px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap}
+    .trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:26px;color:#c6d2e2;font-size:13px}
+    .trust span:before{content:"✓";color:var(--gold2);font-weight:900;margin-right:7px}
+    .book-stage{display:flex;justify-content:center;align-items:center;min-height:430px;position:relative}
+    .book-glow{position:absolute;width:340px;height:340px;border-radius:50%;background:rgba(232,189,101,.15);filter:blur(55px)}
+    .book-cover{position:relative;width:min(100%,310px);max-height:450px;object-fit:contain;border-radius:5px;box-shadow:0 28px 65px rgba(0,0,0,.48);transform:rotate(1.5deg)}
+    .price-chip{position:absolute;bottom:26px;right:2%;background:#fff;color:#10213a;padding:12px 17px;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.25);font-weight:900}
+    .price-chip small{display:block;font-size:10px;color:#59677b;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .section{max-width:1160px;margin:auto;padding:76px 24px}
+    .section-head{max-width:720px;margin-bottom:32px}
+    .section-head h2{font-size:clamp(28px,3.6vw,42px);line-height:1.12;margin:12px 0;color:white}
+    .section-head p{color:var(--muted);margin:0}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:15px;padding:23px}
+    .feature .num{color:var(--gold);font-size:12px;font-weight:900;letter-spacing:.14em}
+    .feature h3{margin:8px 0;color:#fff;font-size:18px}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+    .about-book{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .about-book h2{font-size:clamp(28px,3.5vw,40px);line-height:1.15;margin:12px 0}
+    .about-book p{color:var(--muted)}
+    .learn-list{list-style:none;padding:0;margin:20px 0}
+    .learn-list li{padding:11px 0;border-bottom:1px solid var(--line);color:#e4ebf4}
+    .learn-list li:before{content:"✓";color:var(--gold);font-weight:900;margin-right:11px}
+    .quote-card{padding:30px;border-radius:17px;background:linear-gradient(135deg,rgba(232,189,101,.13),rgba(255,255,255,.035));border:1px solid rgba(232,189,101,.28)}
+    .quote-card blockquote{font-size:22px;line-height:1.4;margin:0 0 15px;font-weight:700}
+    .quote-card p{font-size:13px;margin:0;color:var(--gold2);font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .buy-panel{max-width:1160px;margin:0 auto 76px;padding:0 24px}
+    .buy-inner{border-radius:20px;padding:38px;background:linear-gradient(110deg,#102e55,#0b2140);border:1px solid rgba(232,189,101,.3);display:flex;justify-content:space-between;align-items:center;gap:25px}
+    .buy-inner h2{font-size:clamp(25px,3vw,36px);margin:0 0 7px}
+    .buy-inner p{margin:0;color:var(--muted)}
+    .fineprint{font-size:12px;color:#9eacc0;margin:12px 2px 0}
+    footer{border-top:1px solid var(--line);padding:25px 24px;color:#aebdd0;text-align:center;font-size:13px}
+    @media(max-width:800px){.nav{padding:13px 17px}.nav-links{gap:13px}.nav-links a:not(.nav-cta){display:none}.hero-inner{grid-template-columns:1fr;gap:28px;padding:54px 22px 58px}.book-stage{min-height:340px}.book-cover{width:235px;max-height:340px}.price-chip{right:8%;bottom:12px}.feature-grid{grid-template-columns:1fr}.about-book{grid-template-columns:1fr;gap:20px}.section{padding:55px 22px}.buy-inner{padding:26px;align-items:flex-start;flex-direction:column}}
+    @media(max-width:420px){h1{font-size:39px}.actions .button{width:100%}.trust{gap:10px;flex-direction:column}.book-stage{min-height:310px}}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="/"><span class="brand-mark">VJ</span><span>VJ GLOBAL</span></a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="#about">About the book</a>
+      <a href="#learn">What you'll learn</a>
+      <a class="nav-cta" href="#buy">Get the book</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">VJ GLOBAL · Wholesale education</div>
+        <h1>From Zero to <span>Wholesale Hero.</span></h1>
+        <p class="author-line">The complete step-by-step guide by Vergino S. Jules</p>
+        <p class="hero-copy">Build a profitable online business selling brand-name products. Learn the wholesale process and how to work toward selling through Amazon FBA and Walmart WFS.</p>
+        <div class="actions">
+          <a class="button primary" href="https://www.amazon.com/s?k=From+Zero+to+Wholesale+Hero+Vergino+Jules" target="_blank" rel="noopener">Buy the book on Amazon ↗</a>
+          <a class="button secondary" href="#learn">Explore the book</a>
+        </div>
+        <div class="trust"><span>Practical step-by-step guidance</span><span>Amazon FBA & Walmart WFS</span></div>
+      </div>
+      <div class="book-stage">
+        <div class="book-glow"></div>
+        <img class="book-cover" src="wholesale-hero-book-cover.jpg" alt="From Zero to Wholesale Hero by Vergino S. Jules book cover">
+        <div class="price-chip"><small>Kindle price shown in supplied listing</small>$9.99</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="learn">
+    <div class="section-head">
+      <div class="eyebrow">Inside the guide</div>
+      <h2>Learn the foundations of wholesale e-commerce.</h2>
+      <p>A practical introduction to setting up your business, finding brand-name products, and building your selling operation step by step.</p>
+    </div>
+    <div class="feature-grid">
+      <article class="feature"><div class="num">01 / BUSINESS SETUP</div><h3>Set up the right way</h3><p>Understand the business foundations mentioned in the guide, including an LLC, EIN, and reseller certificate.</p></article>
+      <article class="feature"><div class="num">02 / SELLER ACCOUNTS</div><h3>Open your selling channels</h3><p>Learn about opening and verifying Amazon and Walmart seller accounts.</p></article>
+      <article class="feature"><div class="num">03 / PRODUCT SOURCING</div><h3>Find brand-name products</h3><p>Explore how to identify authorized wholesale distributors and source products customers already know.</p></article>
+    </div>
+  </section>
+
+  <section class="section about-book" id="about">
+    <div>
+      <div class="eyebrow">The book overview</div>
+      <h2>Start with a proven product category—not a product idea from scratch.</h2>
+      <p>Instead of creating a new product from zero, wholesale selling lets you work with established, in-demand products. This guide walks through the process of building an e-commerce business using Amazon FBA and Walmart WFS.</p>
+      <ul class="learn-list">
+        <li>Learn e-commerce and wholesale basics</li>
+        <li>Set up wholesale accounts</li>
+        <li>Source brand-name products</li>
+        <li>Understand how to avoid counterfeit products and account problems</li>
+        <li>Build toward a more organized online business</li>
+      </ul>
+      <a class="button primary" href="https://www.amazon.com/s?k=From+Zero+to+Wholesale+Hero+Vergino+Jules" target="_blank" rel="noopener">View book on Amazon ↗</a>
+    </div>
+    <aside class="quote-card">
+      <blockquote>“Wholesale selling allows you to leverage proven, in-demand products that customers already buy every day.”</blockquote>
+      <p>From the book overview</p>
+    </aside>
+  </section>
+
+  <section class="buy-panel" id="buy">
+    <div class="buy-inner">
+      <div>
+        <div class="eyebrow">Take the next step</div>
+        <h2>Ready to learn the wholesale process?</h2>
+        <p>Explore <em>From Zero to Wholesale Hero</em> by Vergino S. Jules on Amazon.</p>
+      </div>
+      <a class="button primary" href="https://www.amazon.com/s?k=From+Zero+to+Wholesale+Hero+Vergino+Jules" target="_blank" rel="noopener">Buy the book ↗</a>
+    </div>
+    <p class="fineprint">The supplied Amazon screenshot showed a Kindle price of $9.99. Amazon controls the live price, availability, formats, and sample-preview options; these may change. The button opens an Amazon search for the exact book title and author.</p>
+  </section>
+</main>
+
+<footer>© <span id="year">2026</span> VJ GLOBAL · Wholesale education and business development</footer>
+</body>
+</html>
